@@ -34,6 +34,7 @@ public class StudentRegistrationFormTests extends TestBase {
     @Severity(SeverityLevel.BLOCKER)
     @Link(name = "URL", url = "https://demoqa.com/automation-practice-form")
     public void negativeFormTest() {
+        step.openPracticeFromPage();
         step.submitForm();
         step.checkResultsTable();
     }
