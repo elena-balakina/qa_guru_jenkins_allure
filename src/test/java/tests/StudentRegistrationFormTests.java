@@ -25,4 +25,16 @@ public class StudentRegistrationFormTests extends TestBase {
         step.submitForm();
         step.checkResultsTable();
     }
+
+    @Test
+    @Owner("ebalakina")
+    @Feature("Practice form")
+    @Story("Student registration")
+    @DisplayName("Do not fill the form and check Results table")
+    @Severity(SeverityLevel.BLOCKER)
+    @Link(name = "URL", url = "https://demoqa.com/automation-practice-form")
+    public void negativeFormTest() {
+        step.submitForm();
+        step.checkResultsTable();
+    }
 }
